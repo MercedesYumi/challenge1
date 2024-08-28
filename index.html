@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="utf-8">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Imagenes/Logo.png">
+    </header>
+    <main class="peticion">
+        <section class="peticion__ingreso__texto">
+            <input type="text" class="input-text" cols="40" rows="6" placeholder="Ingrese el texto aqui" style="background-color: #F3F5FC;"></input>
+        </section>
+        <section class="advertencia">
+            <img src="Imagenes/Vector.png"></i>
+            <h6 class="advertencia-texto">Solo letras minúsculas y sin acentos</h6>
+        </section>
+            <div class="botones">
+                <button class="encriptar" type="button" onclick="btnencriptar()">Encriptar!</button>
+                <button class="desencriptar" type="button" onclick="btndesencriptar()">Desencriptar!</button>
+            </div> 
+        <section id="rectangulo">
+            <img src="Imagenes/Muñeco.png" id="munieco">
+            <p id="mensaje-1">Ningun mensaje fue encontrado</p>
+            <p id="mensaje-2">Ingresa el texto que deseas encriptar o desencriptar</p>
+            <button type="button"onclick="copiar()" id="copiar">Copiar</button>
+            <input type="text" class="input-text-area" id="textArea"></input> 
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy Copyright Mercedes - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
